@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <title>Log In</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html">
+      <!-- logo from LogoMakr.com -->
+      <img src="img/LogoMakr-95frmx.png" alt="site logo">
+    </a>
+    
+    <h2 class="font-weight-normal display-4 mb-3">AWS Beginners News Group</h2>
+  </header>
+
+  <div class="container mb-3">
+    <nav class="navbar navbar-expand navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="features.html" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="security.html" class="nav-link">Secuirty</a></li>
+        <li class="nav-item"><a href="business.html" class="nav-link">Business</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <form class="container" id="loginpage">
+    <div class="mb-3 mt-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <button type="submit" class="btn btn-primary">LogIn</button>
+  </form>
+  <!--
+    reference: 
+    copied and modified the code from https://getbootstrap.com/docs/5.0/forms/overview/ 
+  -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
+

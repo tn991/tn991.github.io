@@ -1,0 +1,411 @@
+/*Common CSS-------------------------------------*/
+    * {
+        box-sizing: border-box;
+    }
+    .nopadding {
+        padding: 0 !important;
+        margin: 0 !important;
+     }
+    /*Mobile-------------------ds------------------*/
+    @media only screen and (max-width: 600px){
+        body{
+            background: #242323;
+            height: 100%;
+            padding:8px;
+            font-family: "Futura", sans-serif;
+        }
+
+        h1{
+            font-size: 1.3em;
+            color: white;
+        }
+
+        h2{
+
+            font-weight: bold;
+            font-size: 20px;;
+            color: white;
+        }
+
+        h3{
+            font-weight: bold;
+            font-size: 17px;;
+            color: white;
+        }
+
+        p{
+            font-size: 15px;;
+            color: white;
+        }
+
+    }
+    /*Desktop-------------------------------------*/
+    @media only screen and (min-width: 601px){
+        body{
+            background: #242323;
+            height: 100%;
+            padding:8px;
+        }
+
+        h1{
+            font-family: "Futura", sans-serif;
+            font-weight: normal;
+            font-size: 3em;
+            color: white;
+        }
+
+        h2{
+            font-weight: bold;
+            font-size: 20px;;
+            color: white;
+        }
+
+        h3{
+            font-weight: bold;
+            font-size: 17px;;
+            color: white;
+        }
+
+        p{
+            font-size: 15px;;
+            color: white;
+        }
+    }
+
+
+/*Header CSS---------------------------------------*/
+    header{
+        background:#00aeff;
+        border: 1px solid white;
+        text-align: center;
+        width:100%;   
+    }
+    header h1{
+      position: relative;
+      top:0px;
+    }
+    header object{
+        position: relative;
+        top:5px;
+        width: 10%;
+        height: 44%;
+    }
+    header a{
+        color:white;
+    }
+
+/*Nav CSS-------------------------------------------*/
+    /*Mobile-------------------------------------*/
+    @media only screen and (max-width: 970px){
+        nav{
+            background:#00aeff;
+            border: 1px solid white;
+            text-align:center;
+            width:100%;
+            height: auto;
+        }
+
+        nav label{
+            display: block;
+            cursor: pointer;
+            font-size:28px;
+            color: white;
+            margin-right: 20px;
+            position: relative;
+            text-align: right;
+        }
+
+        #toggle{
+         display: none;
+        }
+
+        nav #menu{
+            display: none;
+            border-radius: 20px;
+            width:100%;
+            clear: right;
+        }
+
+        nav ol{
+            border:1px solid white;
+            border-width:1px 0;
+            list-style:none;
+            margin:0;
+            padding:0;
+            text-align:center;  
+        }
+
+        nav li{
+            display:block;
+            border: 1px solid white;
+            border-radius: 5px;;
+            padding:5px;   
+        }
+
+        nav li a {
+            font-family: "Futura", Helvetica, sans-serif;
+            font-style: normal;
+            text-decoration: none;
+            font-variant: normal;
+            font-weight: normal;
+            font-size: 1em;
+            color:hsl(0,0%,255%);
+            display:inline-block;
+            padding:10px;
+
+        }
+
+        #toggle:checked + #menu{
+            display: block;
+        }
+    }
+    /*Desktop-------------------------------------*/
+    @media only screen and (min-width: 971px){
+        nav{
+            background:#00aeff;
+            border: 1px solid white;
+            text-align:center;
+            width:100%;
+        }
+
+        nav label{
+            margin: 0 40px 0 0;
+            font-size: 26px;   
+            text-align: center;
+            display: none;
+        }
+
+        #toggle{
+         display: none;
+        }
+
+        nav ol{
+            list-style:none;
+            margin:0.2%;        
+            padding:0;
+            text-align:center;  
+            display:flex;
+            justify-content: space-between;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        nav li{
+            display:inline;
+            border: 1px solid white;
+            border-radius: 5px;;
+            padding:5px;  
+        }
+
+        nav li a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            text-decoration: none;
+            font-variant: normal;
+            font-weight: normal;
+            font-size: 1em;
+            color:hsl(0,0%,255%);
+            display:inline-block;
+            padding:10px;
+        }
+
+    }
+
+/*Footer CSS-------------------------------------------*/
+    footer { grid-area: footer; }
+    /*Mobile-------------------------------------*/
+    @media only screen and (max-width: 600px){
+        footer
+        {
+            background:#141414;
+            text-align: center;
+            width:100%;
+            padding: 10px;
+            padding-bottom: 1px;
+        }
+
+        footer #footercontents
+        {
+            background: #141414;
+            text-align: center;
+            margin: auto;
+            width:100%;
+            padding:10px;
+            color:white;
+            padding-bottom: 1px;
+        }
+
+        label{
+            font-size:1em;
+            text-align:center;
+        }
+        #emailHelp{
+            font-size:1em;
+        }
+        #footercontact{
+            color:white;
+            font-size:1.2em;
+        }
+    }
+    /*Desktop-------------------------------------*/
+    @media only screen and (min-width: 601px){
+        footer
+        {
+            background:#141414;
+            text-align: center;
+            width:100%;
+            padding: 10px;
+            padding-bottom: 2px;
+            color:white;
+        }
+
+        footer #footercontents
+        {
+            text-align: center;
+            margin: auto;
+            width:100%;
+            padding:10px;
+        }
+        footer>span{
+            display: inline-block;
+        }
+        label{
+            font-size:1em;
+            text-align:center;
+        }
+        #emailHelp{
+            font-size:1em;
+        }
+        #footercontact{
+            color:white;
+            font-size:1.3em;
+        }
+    }
+
+
+/*Index.html CSS------------------------------------*/
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 1150px){   
+    #fplinkArea .fplinkAreaContent{
+        border: 1px solid grey;
+        border-radius: 20px;
+        border-bottom: none;
+        position: relative;
+        padding: 20px; 
+        margin: 10px;
+        margin-bottom: 0px;
+        background: #363535;
+    }
+    
+    #fplinkArea .fplinkAreaContent a{
+        font-size: 15px;;
+        color: orange;
+    } 
+    
+    #PopularArticles{
+        background: #363535;
+        border: 1px solid grey;
+        border-radius: 20px;
+        border-bottom: none;
+        height: 95%;
+        text-align: center;
+        margin:10px;
+    }
+    
+    #PopularArticles h2{
+        padding: 2px, auto, 2px;
+        text-align: center;
+        margin:10px;
+    }
+    
+    #PopularArticles ol{
+        text-align: center;
+    }
+    
+    #PopularArticles ol li{
+        font-family: "Futura", Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1em;
+        color: white; 
+        margin-bottom: 5px;
+    }
+    #PopularArticles a{
+        text-decoration: none;
+        color: orange;
+    }
+}
+
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1151px) {
+ 
+    #fplinkArea{
+       width: 100%;
+       height: 100%;
+        margin:auto,auto;
+    }
+    
+    #fplinkArea .fplinkAreaContent{
+        background: #363535;
+        border: 1px solid grey;
+        border-bottom: none;
+        border-right:none;
+        border-radius: 20px;
+        position: relative;
+        padding: 20px;
+        padding-left: 60px;
+        margin: 20px;
+        height: 22%;
+    }
+    
+    #fplinkArea .fplinkAreaContent a{
+        font-family: "Futura", Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;
+        color: orange;
+    } 
+    
+    #PopularArticles{
+        background: #363535;
+        border: 1px solid grey;
+        border-radius: 20px;
+        height: 94.5%;
+        padding: 15px;
+        margin: 20px;
+    }
+    
+    #PopularArticles h2{
+        position: relative;
+        padding:10px;
+        text-align: center;
+    }
+    
+    #PopularArticles ol{
+        text-align: center;
+    }
+    
+    #PopularArticles ol li{
+        font-family: "Futura", Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 0.9em;
+        color: white; 
+        margin-bottom: 15px;
+        padding:15px;
+    }  
+    
+    #PopularArticles a{
+        text-decoration: none;
+        color: orange;
+    }
+    
+}
+
+
+
+

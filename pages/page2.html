@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang= "en">
+
+<head>
+    <title>CVEs labeled 'critical'</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a website for a community of people interested in reading books for discussion and sharing.">
+    <meta name="author" content="Online Reading Community">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../StyleSheet/style.css">
+    <link rel="stylesheet" type="text/css" href="../StyleSheet/article.css">
+</head>
+
+
+<!-- This body section contains the structure for all the visble content -->
+<body>
+  <div class = "container-fluid">
+<!--header-->
+    <div class = "row">
+         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+            <header>
+                <a href="../index.html">
+                    <object data="../img/LogoMakr-95frmx.png"> 
+                    </object> 
+                 </a>   
+                 <h1>AWS Beginners Newsgroup</h1>
+                 <h2>Security News - CVEs labeled 'critical'</h2>
+                 <button type="submit" class="btn btn-primary mb-2">
+                    <a href="../login.html">LogIn</a>
+                 </button>
+            </header>
+          <div class = "row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                <nav>
+                    <label for="toggle">&#9776;</label>
+                    <input type="checkbox" id= "toggle"/>
+                    <div id = "menu">
+                        <ol>
+                            <li><a href="../services.html">New Services</a></li>
+                            <li><a href="../features.html">New Features</a></li>
+                            <li><a href="../security.html">Security News</a></li>
+                            <li><a href="../business.html">Company News</a></li>
+                        </ol>
+                    </div>
+                </nav>            
+            </div>
+          </div>
+         </div>
+     </div>
+<!--main contents-->
+    <div class = "row">
+<!--features description-->
+     <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 nopadding">
+            <div id="articleArea">
+                <div class="articleTitle">
+                    <h2>Security News - CVEs labeled 'critical'</h2>
+                    <p>... from nvd.nist.gov </p>
+                </div>
+                <div class="articleContent" id="page2">  
+                    <img src="../img/finding.png" alt="logo">
+                    <article>
+                        <dl>
+                            <dt>CVE-2020-35775(LDAP Injection)
+                            </dt>
+                            <dd>CITSmart before 9.1.2.23. February 15, 2021; </dd>
+                            <dt>CVE-2021-3331(WinSCP before 5.17.10, remote code execution)
+                            </dt>
+                            <dd> allows remote attackers to execute arbitrary programs when the URL handler encounters a crafted URL that loads session settings. (For example, this is exploitable in a default installation in which WinSCP is the handler for sftp:// URLs.)
+                                January 27, 2021</dd>
+                            <dt>CVE-2020-28472(aws-sdk before 2.814.0)</dt>
+                            <dd> the package @aws-sdk/shared-ini-file-loader before 1.0.0-rc.9; the package aws-sdk before 2.814.0. If an attacker submits a malicious INI file to an application that parses it with loadSharedConfigFiles , they will pollute the prototype on the application. January 19, 2021</dd>
+                            <dt>CVE-2020-29600(AWStats through 7.7)
+                               </dt>
+                            <dd>cgi-bin/awstats.pl?config= accepts an absolute pathname, even though it was intended to only read a file in the /etc/awstats/awstats.conf format. December 07, 2020</dd>
+                        </dl>
+                        <span>reference: https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=aws&search_type=all</span>
+                        <p>Please update</p>
+                        
+                    </article>
+                </div>
+            </div>
+      </div>    
+<!--popular articles-->
+     <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 nopadding">
+            <div id="PopularArticles">
+                <h2>Popular Articles</h2>
+               <ol>
+                    <li><a href="page1.html"><b>Updated List of Free Services</b><br> from <em>New Features</em></a></li>
+                    <li><a href="page2.html"><b>CVEs labeled 'critical'</b><br> from <em>Security News</em></a></li>
+                    <li><a href="page3.html"><b>Mac EC2 Instance</b><br> from <em>New Services</em></a></li>
+                    <li><a href="page4.html"><b>AWS CloudShell</b><br> from <em>New Services</em></a></li>
+                    <li><a href="page5.html"><b>AWS CEO will replace Jeff Bezos </b><br> from <em>Company News</em></a></li>
+               </ol>
+          </div>     
+      </div>
+   </div>
+<!--footer-->
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+            <footer>
+                <div id="footercontents">       
+                    <span>
+                        <label for="exampleInputEmail1" class="form-label">Newsletter Email: </label>       
+                    </span>
+                    <span>
+                        <span class="align-middle" id="inputtext">
+                            <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </span>
+                        <button class="btn btn-danger btn-sm">Subscribe</button><br>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </span>
+                    <br>
+                        <p>&copy; takafuminakayama.com <br>Created my free logo at LogoMakr.com</p>
+                        <a href="../contact.html">contact</a>
+                </div>
+            </footer>
+        </div>
+   
+  </div>
+</body>
+</html>
